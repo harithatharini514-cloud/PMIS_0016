@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zoho Music Academy 🎶</title>
+  <link rel="stylesheet" href="style.css">
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+  <audio id="bgMusic" loop>
+    <source src="assets/Voice of Zoho Registration Melody.mp3" type="audio/mp3">
+  </audio>
+  <div class="music-control" onclick="toggleMusic()">🎵 Play Music</div>
+
+ 
+  <div class="logo">
+    <img src="assets/logo.png" class="img" alt="">
+  </div>
+
+  <div class="container">
+    <h1>ZOHO VOCALVISTA🎙️</h1>
+    <h2>🎶✨ Voice of Zoho ✨🎶</h2>
+    <h3>Registration Form</h3>
+
+    <form id="registrationForm" novalidate>
+     
+      <div class="form-group">
+        <label>Full Name</label>
+        <input type="text" id="name" required>
+        <small>Enter a valid name(only letters)</small>
+      </div>
+
+      <div class="form-group">
+        <label>Age</label>
+        <input type="number" id="age" required min="5" max="100">
+        <small>Enter a valid age(5-100)</small>
+      </div>
+
+      <div class="form-group">
+        <label>Gender</label>
+        <select id="gender" required>
+          <option value="">--Select--</option>
+          <option>Male</option>
+          <option>Female</option>
+          <option>Others</option>
+        </select>
+        <small>Please select gender</small>
+      </div>
+
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" id="email" required>
+        <small>Enter a valid email id</small>
+      </div>
+
+      <div class="form-group">
+        <label>Phone</label>
+        <input type="text" id="phone" required>
+        <small>Enter a valid phone number (10 digits)</small>
+      </div>
+
+      <div class="form-group">
+        <label>Preferred Genre</label>
+        <select id="genre" required>
+          <option value="">--Select--</option>
+          <option>Classical</option>
+          <option>Devotional</option>
+          <option>Pop</option>
+          <option>Rock</option>
+          <option>Jazz</option>
+          <option>Folk</option>
+        </select>
+        <small>Please select genre</small>
+      </div>
+
+      <div class="form-group">
+        <label>Singing Experience</label>
+        <textarea id="experience" placeholder="Briefly describe your experience"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label>Upload Image(required)</label>
+        <input type="file" id="image" accept="image/*" required>
+        <small>Please upload image</small>
+      </div>
+
+      <div class="form-group">
+        <label>Upload your Recordings(MP3/MP4)</label>
+        <input type="file" id="media" accept="audio/*,video/*">
+      </div>
+
+      <button type="submit">Register Now</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
