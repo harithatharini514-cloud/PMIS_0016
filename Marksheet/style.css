@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Times New Roman', Times, serif;
+  margin: 20px;
+}
+.marksheet {
+  width: 210mm;
+  min-height: 297mm;
+  background: hsl(120, 100%, 95%);
+  border: 6px double black;
+  margin: auto;
+  padding: 10px;
+  position: relative;
+  box-shadow: 0 0 15px rgba(0,0,0,.3);
+  overflow: hidden;
+  padding-bottom: 40px;
+}
+.watermark {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 35%;
+  opacity: 0.06;
+  z-index: 0;
+  pointer-events: none;
+}
+.marksheet > *:not(.watermark) {
+  position: relative; 
+  z-index: 1;
+}
+.ms-header {
+  border: 2px solid black;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo img {
+  width: 90px;
+  height: auto;
+}
+.title {
+  text-align: center;
+  flex-grow: 1;
+}
+.title h1 { font-size: 16pt; }
+.title h2 { font-size: 14pt; }
+.title h3 { font-size: 14pt; margin-top: 5px; }
+.title pre { font-size: 10pt; }
+.student-photo img {
+  width: 80px;
+  height: 100px;
+  border: 1px solid black;
+}
+.header-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  padding-bottom: 30px;
+}
+.header-table td {
+  border: 2px solid #000;
+  padding: 4px 5px;
+  vertical-align: middle;
+}
+
+.middle-table th,
+.middle-table td {
+  border: none;   
+  padding: 5px;   
+  vertical-align: middle;
+  border-left: 2px solid black;   
+  border-right: 2px solid black;
+  border-top: none;   
+  border-bottom: none;
+}
+.middle-table thead th {
+  border-bottom: 2px solid black;
+}
+.middle-table tbody td:nth-child(3) {
+  text-align: left;
+  padding-left: 12px;
+}
+.middle-table table {
+  width: 100%;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-top: 2px solid black;
+  border-bottom: none; 
+  border-collapse: collapse;
+  font-size: 14px;
+  text-align: center;
+}
+
+.end-table {
+  border: none; 
+  border-collapse: collapse;
+  width: 100%;
+
+}
+
+.end {
+  text-align: center;
+  font-weight: bold;
+  background: none;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  border-top: none; 
+  width: 100%;
+  padding-top: 40px;    
+  padding-bottom: 40px;
+  margin-top: 0;     
+  margin-bottom: 50px;
+}
+
+
+.grade-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.grade-table th,
+.grade-table td {
+  border: 2px solid #000;
+  padding: 6px;
+  font-size: 14px;
+}
+.footer-table {
+  margin-top: 5px; 
+  padding-bottom: 5px;
+}
+.footer-table table {
+  border: 2px solid black;
+}
+.notes {
+  font-size: 11px;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;  /* reduced margin top */
+  margin-bottom: 0; 
+  padding-top: 0;
+  padding-bottom: 5px;
+}
+.footer .left, 
+.footer .right {
+  width: 25%;
+  text-align: center;
+  font-size: 13px;
+}
+.footer .center {
+  width: 20%;
+  text-align: center;
+}
+.footer .seal, .footer .logo {
+  width: 80px;
+  height: auto;
+}
+.footer .mysign {
+  margin-top: 5px;
+  font-style: italic;
+  font-size: 12px;
+}
+.footer .sign {
+  margin-top: 5px;
+  font-style: italic;
+  font-size: 12px;
+}
+.right {
+  width: 190px;
+}
+.sign2 {
+  width: 190px;   
+  height: auto;   
+}
+.left {
+  width: 150px;
+}
+.sign1 {
+  width: 150px;   
+  height: auto;  
+}
